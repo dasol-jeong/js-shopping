@@ -1,0 +1,69 @@
+@import "variable.css";
+
+body {
+  background-color: var(--color-black);
+  height: 100vh;
+  width: 100%;
+}
+.wrap {
+  width: 50%;
+  margin: 0 auto;
+}
+.header-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  cursor: pointer;
+}
+.header-logo > img {
+  width: 150px;
+  height: 150px;
+  transition: transform var(--annimation-duration) ease;
+}
+.header-logo > img:hover {
+  transform: scale(1.1);
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 0;
+}
+
+li > img {
+  width: var(--size-button);
+  height: var(--size-button);
+}
+button {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.btn_b {
+  background-color: var(--color-blue);
+}
+.btn_y {
+  background-color: var(--color-yellow);
+}
+.btn_p {
+  background-color: var(--color-pink);
+}
+.items {
+  overflow-y: scroll;
+  padding-left: 0;
+}
+.item {
+  background-color: var(--color-white);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.item > img {
+  padding: 10px 20px;
+}
